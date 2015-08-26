@@ -1,8 +1,7 @@
 ﻿<?php
-header('Cache-Control: no cache'); //no cache
-session_cache_limiter('must-revalidate');
-session_start();	
-
+if (!isset($_SESSION)){
+	session_start();	
+}
 
 date_default_timezone_set("Europe/Madrid");
 

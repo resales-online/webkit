@@ -2,7 +2,7 @@
 
 $tmpDir = explode('/', dirname($_SERVER['PHP_SELF']));
 
-if ( isset($tmpDir[1]) && strpos($tmpDir[1],'.php') === false && $tmpDir[1] != '') {
+if ( strpos($tmpDir[1],'.php') === false ) {
 	$dir = '/'.$tmpDir[1];
 } else {
 	$dir = '';

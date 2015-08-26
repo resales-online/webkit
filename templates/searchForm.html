@@ -3,13 +3,14 @@
         <div class='listing-search-main'>
             <input type='text' class='listing-search-text text form-control wbSearchTextBox' name='s' title='{Search.PropertyId}' placeholder='{Search.PropertyId}' value=''/>
         </div>
-        {% if($showSearchType) {%}
         <div class='listing-search-field listing-search-field-taxonomy listing-search-field-location margin-top-8'>
             <select class='listing-search-location select form-control wbSearchDropdown' name='searchType'>
-				{Search.Type.Options}
+                <option value='Resale'>{Search.SearchType.ForSale}</option>
+                <option value='RentalLT'>{Search.SearchType.LongTerm}</option>
+                <option value='RentalST'>{Search.SearchType.ShortTerm}</option>
             </select>
         </div>
-        {%} %}        
+        
         <div class='listing-search-field listing-search-field-rental-date-from margin-top-8' style='display:none'>
             <input type='text' value='' title='{Search.Rental.From}' placeholder='{Search.Rental.From}' id='rental_date_from' name='rental_date_from' class='listing-search-text text form-control'/>
         </div>
@@ -124,12 +125,7 @@
         {%} %}
         
         <input type='submit' class='listing-search-submit btn btn-large btn-primary margin-top-8 wbSearchButton' name='search-submit' value='{Search.Button.Submit}'/>
-         {% if( !$showSearchType) {%}
-        	<input type='hidden' id='searchType'  name='searchType' value='{Search.TypeData}' />
-		{%} %}
-        {% if(!$showAreas) {%}
-       		<input type='hidden' id='searchArea' name='area' value='{Search.Area.Text}' />
-        {%} %}       
+        
         <input type='hidden' id='searchTypeValue' name='searchTypeValue' value='' />
         <input type='hidden' id='areaValue' name='areaValue' value='' />
         <input type='hidden' id='locationValue' name='locationValue' value='' />

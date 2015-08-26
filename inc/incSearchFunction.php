@@ -22,12 +22,10 @@ function getLocations() {
 function getAreas() {
 	
 	global $locationsXML;
-	global $showAreas;
+
 	foreach ($locationsXML->Areas as $areas) {
 	}
-	if (count($areas) == 1){
-		$showAreas = false;
-	}
+
 	return $areas;
 }
 
