@@ -3,6 +3,5 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 
-RewriteRule ^resultDetail([^\.]+) resultDetail.php [NC,L]
-RewriteRule ^searchResults([^\.]+) searchResults.php [NC,L]
+RewriteRule ^resultDetail([^\.]+)\.htm$ resultDetail.php/$ [NC,L]
 RewriteRule ^([^\.]+)$ $1.php [NC,L]

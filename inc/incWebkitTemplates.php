@@ -76,19 +76,7 @@ function generateRange($from, $to, $range) {
 
 	return $result;
 }
-function getSearchTypeOptions() {
-	global $searchType;
-	global $languageArr;
-	
-	$res = '';
-	if ($searchType != 'Rental'){
-		$res = '<option value="Resale">'.$languageArr['search_Types']['for_Sale'].'</option>';
-	}
-	$res .= '<option value="RentalLT">'.$languageArr['search_Types']['longTerm_Rent'].'</option>';
-	$res .= '<option value="RentalST">'.$languageArr['search_Types']['shortTerm_Rent'].'</option>';
-	
-	return $res;
-}
+
 
 function displaySearchForm() {
 
@@ -208,10 +196,8 @@ function displaySearchForm() {
 		'Search.ResultPage' => $resultsPage,
 		'Search.Currency.Old' => isset($_SESSION["currency"]) ? $_SESSION["currency"] : 'EUR',
 		'Search.LanguageCode' => $datePickerLanguages[$language],
-		'Search.ShowChosen' => $showChosen,
-		'Search.Type.Options' => getSearchTypeOptions()
+		'Search.ShowChosen' => $showChosen
 	), array(
-		'showSearchType' => ( $searchType == 'All' || $searchType == 'Rental' ),
 		'showAreas' => $showAreas,
 		'showBeds' => $showBeds,
 		'showBaths' => $showBaths,
