@@ -1,0 +1,17 @@
+<form id="searchForm" action="{Paging.Search.Action}" method="post">
+<div class="wbPagContainer">
+    <div>
+        <span class="wbPagIndicatorText">{Paging.PageOf}</span>
+        <span><a {Paging.First.Link}>{Paging.First.Text}</a></span>
+        <span><a {Paging.Prev.Link}>{Paging.Prev.Text}</a></span>
+        <span><a {Paging.Next.Link}>{Paging.Next.Text}</a></span>
+        <span><a {Paging.Last.Link}>{Paging.Last.Text}</a></span>
+    </div>
+    <div class="wbPagContainerRow">
+        <span class="wbPagSortDropDown"><select class="listing-search-max select wbPagSortDropDown" name="pSort" id="pSort">{Paging.SortOption}</select></span>
+        <span class="wbPagSortText">{Paging.ShortHeader}</span>
+        <span><select class="listing-search-max select wbPagCountDropDown" name="pageSize" id="pageSize"></select></span>
+        <span class="wbPagCountText">{Paging.ResultCount}</span>
+    </div>
+</div>
+</form>

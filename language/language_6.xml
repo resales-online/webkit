@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<webkit_Languages version="1.6">
+   <search_Types>
+      <for_Sale>Til Salg</for_Sale>
+      <longTerm_Rent>Langtidsudlejning</longTerm_Rent>
+      <shortTerm_Rent>Korttidsudlejning</shortTerm_Rent>
+   </search_Types>
+   <field_Headings>
+      <option_NoPref>Ingen Præference</option_NoPref>
+      <property_Type>Type</property_Type>
+      <property_SubType>Undertype</property_SubType>
+      <bedrooms>
+         <header>Soveværelser</header>
+         <short_Header>Soveværelser</short_Header>
+         <option_single>{i} Soveværelse</option_single>
+         <option_singleGreaterThan>{i} Soveværelse eller flere</option_singleGreaterThan>
+         <option_multiple>{i} Soveværelser</option_multiple>
+         <option_multipleGreaterThan>{i} Soveværelser eller flere</option_multipleGreaterThan>
+      </bedrooms>
+      <bathrooms>
+         <header>Badeværelser</header>
+         <short_Header>Badeværelser</short_Header>
+         <option_single>{i} Badeværelse</option_single>
+         <option_singleGreaterThan>{i} Badeværelse eller mere</option_singleGreaterThan>
+         <option_multiple>{i} Badeværelser</option_multiple>
+         <option_multipleGreaterThan>{i} Badeværelser eller flere</option_multipleGreaterThan>
+      </bathrooms>
+      <price_Min>Mindste Pris</price_Min>
+      <price_Max>Maksimum Pris</price_Max>
+      <rental_From>Udlejning fra</rental_From>
+      <rental_To>Udlejning til</rental_To>      
+      <select_Locations>Vælg beliggenheder</select_Locations>      
+      <select_Types>Vælg ejendomstyper</select_Types>      
+      <select_Features>Vælg karaktaristika</select_Features>      
+      <energyRating>
+         <header>Energy Vurdering</header>
+         <option_NotRated>Ikke Vurderet</option_NotRated>
+         <option_Rated>Vurderet</option_Rated>
+         <option_rating>{i}</option_rating>
+         <option_ratingGreaterThan>{i} eller bedre</option_ratingGreaterThan>
+      </energyRating>
+      <plot_Size>Grundareal</plot_Size>
+      <terrace_Size>Terrasse</terrace_Size>
+      <built_Size>Boligområde</built_Size>
+      <prop_Id>Ejendom Id</prop_Id>
+      <currency>Valuta</currency>
+      <search_Button>Søge</search_Button>
+   </field_Headings>
+   <results_Headings>
+      <new_Search>Ny Søgning</new_Search>
+      <resultCount>Vis</resultCount>
+      <search_Result>Søgeresultater</search_Result>
+      <no_Result>Ingen resultater blev fundet</no_Result>
+      <sort>
+         <header>Sorter Efter</header>
+         <options_PriceAsc>Pris OPST</options_PriceAsc>
+         <options_PriceDesc>Pris NEDST</options_PriceDesc>
+         <options_Location>Beliggenhed</options_Location>
+         <options_Features>De Fleste Sammenlign Karaktaristika</options_Features>
+      </sort>
+      <pagination>
+      	<page_Count>Side {i} af {x}</page_Count>
+      	<first>Første</first>
+      	<prev>Forrige</prev>
+      	<next>Næste</next>
+      	<last>Sidste</last>
+      </pagination>
+   </results_Headings>
+   <detail_Headings>
+      <property_Details>Detaljer om Ejendommen</property_Details>
+      <last_Result>Sidste Results</last_Result>
+      <detail_Title>{i} Soveværelse {t} i {l}</detail_Title>
+      <photos>Billeder</photos>
+      <map>Kort</map>
+      <calendar>Reservation Kalender</calendar>
+   </detail_Headings>
+   <contact_Form>
+      <header>Kontaktformular</header>
+      <firstName>Fornavn</firstName>
+      <lastName>Efternavn</lastName>
+      <email>E-mail</email>
+      <message>Besked</message>
+      <submit>Send</submit>
+      <valid_firstName>Fornavn er påkrævet</valid_firstName>
+      <valid_lastName>Efternavn er påkrævet</valid_lastName>
+      <valid_email>E-mail er ugyldig</valid_email>
+   </contact_Form>
+</webkit_Languages>

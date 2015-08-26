@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<webkit_Languages version="1.6">
+   <search_Types>
+      <for_Sale>Na Sprzedaż</for_Sale>
+      <longTerm_Rent>Long Term Rent</longTerm_Rent>
+      <shortTerm_Rent>Wynajem Krótkoterminowy</shortTerm_Rent>
+   </search_Types>
+   <field_Headings>
+      <option_NoPref>Brak Preferencji</option_NoPref>
+      <property_Type>Typ</property_Type>
+      <property_SubType>Podkategoria</property_SubType>
+      <bedrooms>
+         <header>Sypialnie</header>
+         <short_Header>Sypialnie</short_Header>
+         <option_single>{i} Sypialnie</option_single>
+         <option_singleGreaterThan>{i} Sypialnia lub więcej</option_singleGreaterThan>
+         <option_multiple>{i} Sypialnie</option_multiple>
+         <option_multipleGreaterThan>{i} Sypialnie lub więcej</option_multipleGreaterThan>
+      </bedrooms>
+      <bathrooms>
+         <header>Łazienki</header>
+         <short_Header>Łazienki</short_Header>
+         <option_single>{i} łazienka</option_single>
+         <option_singleGreaterThan>{i} łazienka lub więcej</option_singleGreaterThan>
+         <option_multiple>{i} Łazienki</option_multiple>
+         <option_multipleGreaterThan>{i} łazienki lub więcej</option_multipleGreaterThan>
+      </bathrooms>
+      <price_Min>Minimalny Cena</price_Min>
+      <price_Max>Maksymalny Cena</price_Max>
+      <rental_From>Wynajem Od</rental_From>
+      <rental_To>Wynajem Do</rental_To>      
+      <select_Locations>Wybierz lokalizacje</select_Locations>      
+      <select_Types>Wybierz typy właściwości</select_Types>      
+      <select_Features>Wybierz funkcje</select_Features>      
+      <energyRating>
+         <header>Klasa Energetyczna</header>
+         <option_NotRated>Nie Oceniony</option_NotRated>
+         <option_Rated>Oceniony</option_Rated>
+         <option_rating>{i}</option_rating>
+         <option_ratingGreaterThan>{i} lub lepiej</option_ratingGreaterThan>
+      </energyRating>
+      <plot_Size>Powierzchnia Działki</plot_Size>
+      <terrace_Size>Taras</terrace_Size>
+      <built_Size>Powierzchnia Mieszkalna</built_Size>
+      <prop_Id>Nieruchomość Id</prop_Id>
+      <currency>Waluta</currency>
+      <search_Button>Szukać</search_Button>
+   </field_Headings>
+   <results_Headings>
+      <new_Search>Nowe Wyszukiwanie</new_Search>
+      <resultCount>Pokazać</resultCount>
+      <search_Result>Wyniki wyszukiwania</search_Result>
+      <no_Result>Nie znaleziono wyników</no_Result>
+      <sort>
+         <header>Sortuj według</header>
+         <options_PriceAsc>Cena ROS</options_PriceAsc>
+         <options_PriceDesc>Cena MAL</options_PriceDesc>
+         <options_Location>Lokalizacja</options_Location>
+         <options_Features>Większość funkcje dopasowane</options_Features>
+      </sort>
+      <pagination>
+      	<page_Count>Strona {i} z {x}</page_Count>
+      	<first>Pierwszy</first>
+      	<prev>Poprzedni</prev>
+      	<next>Następny</next>
+      	<last>Ostatnio</last>
+      </pagination>
+   </results_Headings>
+   <detail_Headings>
+      <property_Details>Szczegóły Własności</property_Details>
+      <last_Result>Ostatnie Wyniki</last_Result>
+      <detail_Title>{i} Sypialnie {t} {l} w</detail_Title>
+      <photos>Zdjęcia</photos>
+      <map>Mapa</map>
+      <calendar>Kalendarz Rezerwacji</calendar>
+   </detail_Headings>
+   <contact_Form>
+      <header>Formularz kontaktowy</header>
+      <firstName>Imię</firstName>
+      <lastName>Nazwisko</lastName>
+      <email>E-mail</email>
+      <message>Wiadomość</message>
+      <submit>Prześlij</submit>
+      <valid_firstName>Imię jest wymagane</valid_firstName>
+      <valid_lastName>Nazwisko jest wymagane</valid_lastName>
+      <valid_email>E-mail jest nieprawidłowy</valid_email>
+   </contact_Form>
+</webkit_Languages>

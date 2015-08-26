@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<webkit_Languages version="1.6">
+   <search_Types>
+      <for_Sale>Till Salu</for_Sale>
+      <longTerm_Rent>Långsiktig Hyra</longTerm_Rent>
+      <shortTerm_Rent>Kort Sikt Hyra</shortTerm_Rent>
+   </search_Types>
+   <field_Headings>
+      <option_NoPref>Ingen Preferens</option_NoPref>
+      <property_Type>Typ</property_Type>
+      <property_SubType>Typ</property_SubType>
+      <bedrooms>
+         <header>Sovrum</header>
+         <short_Header>Bäddar</short_Header>
+         <option_single>{i} Bädd</option_single>
+         <option_singleGreaterThan>{i} Bädd eller fler</option_singleGreaterThan>
+         <option_multiple>{i} Bäddar</option_multiple>
+         <option_multipleGreaterThan>{i} Bäddar eller fler</option_multipleGreaterThan>
+      </bedrooms>
+      <bathrooms>
+         <header>Badrum</header>
+         <short_Header>Badrum</short_Header>
+         <option_single>{i} Badrum</option_single>
+         <option_singleGreaterThan>{i} Badrum eller fler</option_singleGreaterThan>
+         <option_multiple>{i} Badrum</option_multiple>
+         <option_multipleGreaterThan>{i} Badrum eller fler</option_multipleGreaterThan>
+      </bathrooms>
+      <price_Min>Minsta Pris</price_Min>
+      <price_Max>Maximal Pris</price_Max>
+      <rental_From>Uthyrning Från</rental_From>
+      <rental_To>Uthyrning Till</rental_To>      
+      <select_Locations>Välj städer</select_Locations>      
+      <select_Types>Välj fastighetstyper</select_Types>      
+      <select_Features>Välj funktioner</select_Features>      
+      <energyRating>
+         <header>Energy Betyg Av</header>
+         <option_NotRated>Inte Klassad</option_NotRated>
+         <option_Rated>Klassad</option_Rated>
+         <option_rating>{i}</option_rating>
+         <option_ratingGreaterThan>{i} eller bättre</option_ratingGreaterThan>
+      </energyRating>
+      <plot_Size>Tomtstorlek</plot_Size>
+      <terrace_Size>Terrass</terrace_Size>
+      <built_Size>Bor Område</built_Size>
+      <prop_Id>Fastigheter Id</prop_Id>
+      <currency>Valuta</currency>
+      <search_Button>Sök</search_Button>
+   </field_Headings>
+   <results_Headings>
+      <new_Search>Ny Sökning</new_Search>
+      <resultCount>Visar</resultCount>
+      <search_Result>Sökresultat</search_Result>
+      <no_Result>Inga resultat hittades</no_Result>
+      <sort>
+         <header>Sortera</header>
+         <options_PriceAsc>Pris STIG</options_PriceAsc>
+         <options_PriceDesc>Pris FALL</options_PriceDesc>
+         <options_Location>Stad</options_Location>
+         <options_Features>De flesta funktioner uppfylls</options_Features>
+      </sort>
+      <pagination>
+      	<page_Count>Sida {i} av {x}</page_Count>
+      	<first>Först</first>
+      	<prev>Föregående</prev>
+      	<next>Nästa</next>
+      	<last>Senast</last>
+      </pagination>
+   </results_Headings>
+   <detail_Headings>
+      <property_Details>Detaljer om Fastigheten</property_Details>
+      <last_Result>Senast Resultat</last_Result>
+      <detail_Title>{i} Bädd {t} i {l}</detail_Title>
+      <photos>Bilder</photos>
+      <map>Karta</map>
+      <calendar>Bokningskalender</calendar>
+   </detail_Headings>
+   <contact_Form>
+      <header>Kontaktformulär</header>
+      <firstName>Förnamn</firstName>
+      <lastName>Efternamn</lastName>
+      <email>E-post</email>
+      <message>Meddelande</message>
+      <submit>Skicka</submit>
+      <valid_firstName>Förnamn krävs</valid_firstName>
+      <valid_lastName>Efternamn krävs</valid_lastName>
+      <valid_email>E-post är ogiltig</valid_email>
+   </contact_Form>
+</webkit_Languages>

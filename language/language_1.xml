@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<webkit_Languages version="2.0">
+   <search_Types>
+      <for_Sale>For Sale</for_Sale>
+      <longTerm_Rent>Long Term Rent</longTerm_Rent>
+      <shortTerm_Rent>Short Term Rent</shortTerm_Rent>
+   </search_Types>
+   <field_Headings>
+      <option_NoPref>No Preference</option_NoPref>
+      <property_Type>Type</property_Type>
+      <property_SubType>SubType</property_SubType>
+      <bedrooms>
+         <header>Bedrooms</header>
+         <short_Header>Beds</short_Header>
+         <option_single>{i} Bed</option_single>
+         <option_singleGreaterThan>{i} Bed or more</option_singleGreaterThan>
+         <option_multiple>{i} Beds</option_multiple>
+         <option_multipleGreaterThan>{i} Beds or more</option_multipleGreaterThan>
+      </bedrooms>
+      <bathrooms>
+         <header>Bathrooms</header>
+         <short_Header>Baths</short_Header>
+         <option_single>{i} Bath</option_single>
+         <option_singleGreaterThan>{i} Bath or more</option_singleGreaterThan>
+         <option_multiple>{i} Baths</option_multiple>
+         <option_multipleGreaterThan>{i} Baths or more</option_multipleGreaterThan>
+      </bathrooms>
+      <price_Min>Minimum Price</price_Min>
+      <price_Max>Maximum Price</price_Max>
+      <rental_From>Rental From</rental_From>
+      <rental_To>Rental To</rental_To>      
+      <select_Locations>Choose locations</select_Locations>      
+      <select_Types>Choose property types</select_Types>      
+      <select_Features>Choose features</select_Features>      
+      <energyRating>
+         <header>Energy Rating</header>
+         <option_NotRated>Not Rated</option_NotRated>
+         <option_Rated>Rated</option_Rated>
+         <option_rating>{i}</option_rating>
+         <option_ratingGreaterThan>{i} or better</option_ratingGreaterThan>
+      </energyRating>
+      <plot_Size>Plot Size</plot_Size>
+      <terrace_Size>Terrace</terrace_Size>
+      <built_Size>Living Area</built_Size>
+      <garden>Garden</garden>
+      <prop_Id>Property Id</prop_Id>
+      <currency>Currency</currency>
+      <search_Button>Search</search_Button>
+   </field_Headings>
+   <results_Headings>
+      <new_Search>New Search</new_Search>
+      <resultCount>Show</resultCount>
+      <search_Result>Search Results</search_Result>
+      <no_Result>No Results Found</no_Result>
+      <sort>
+         <header>Sort By</header>
+         <options_PriceAsc>Price ASC</options_PriceAsc>
+         <options_PriceDesc>Price DESC</options_PriceDesc>
+         <options_Location>Location</options_Location>
+         <options_Features>Most Features Matched</options_Features>
+      </sort>
+      <pagination>
+      	<page_Count>Page {i} of {x}</page_Count>
+      	<first>First</first>
+      	<prev>Previous</prev>
+      	<next>Next</next>
+      	<last>Last</last>
+      </pagination>
+   </results_Headings>
+   <detail_Headings>
+      <property_Details>Property Details</property_Details>
+      <last_Result>Last Results</last_Result>
+      <detail_Title>{i} Bed {t} in {l}</detail_Title>
+      <photos>Photos</photos>
+      <map>Map</map>
+      <calendar>Rental Availability</calendar>
+      <not_Available>Rental Availability</not_Available>
+      <week>week</week>
+      <month>month</month>
+   </detail_Headings>
+   <contact_Form>
+      <header>Contact Form</header>
+      <firstName>First Name</firstName>
+      <lastName>Surname</lastName>
+      <email>Email</email>
+      <message>Message</message>
+      <submit>Submit</submit>
+      <valid_firstName>First name is required</valid_firstName>
+      <valid_lastName>Surname is required</valid_lastName>
+      <valid_email>Email is invalid</valid_email>
+   </contact_Form>
+</webkit_Languages>

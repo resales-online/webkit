@@ -1,0 +1,156 @@
+<div class='form-inner well wbSearchContainer'>
+	<form id='searchForm' action='{Search.Form.Action}' method='post'>
+        <div class='listing-search-main'>
+            <input type='text' class='listing-search-text text form-control wbSearchTextBox' name='s' title='{Search.PropertyId}' placeholder='{Search.PropertyId}' value=''/>
+        </div>
+        {% if($showSearchType) {%}
+        <div class='listing-search-field listing-search-field-taxonomy listing-search-field-location margin-top-8'>
+            <select class='listing-search-location select form-control wbSearchDropdown' name='searchType'>
+				{Search.Type.Options}
+            </select>
+        </div>
+        {%} %}        
+        <div class='listing-search-field listing-search-field-rental-date-from margin-top-8' style='display:none'>
+            <input type='text' value='' title='{Search.Rental.From}' placeholder='{Search.Rental.From}' id='rental_date_from' name='rental_date_from' class='listing-search-text text form-control'/>
+        </div>
+        
+        <div class='listing-search-field listing-search-field-rental-date-to margin-top-8' style='display:none'>
+            <input type='text' value='' title='{Search.Rental.To}' placeholder='{Search.Rental.To}' id='rental_date_to' name='rental_date_to' class='listing-search-text text form-control'/>
+        </div>
+        
+        {% if($showAreas) {%}
+			<div class='listing-search-field listing-search-field-taxonomy listing-search-field-location margin-top-8'>
+				<select class='listing-search-location select form-control wbSearchDropdown' name='area' id='searchArea'>
+					{Search.Area.Options}
+	            </select>
+	        </div>
+		{%} %}
+        
+        {% if(!$showChosen) {%}
+	    <div id='search-title-location' class='search-field-title'>{Search.Location.Placeholder}</div>
+		<div class='listing-search-field listing-search-field-taxonomy listing-search-field-location margin-top-0'>
+		{%} %}
+
+        {% if($showChosen) {%}
+        <div class='listing-search-field listing-search-field-taxonomy listing-search-field-location margin-top-8'>
+		{%} %}
+
+            <select class='listing-search-location select form-control wbSearchMultiSelect' name='location[]' id='searchLocation' multiple placeholder='{Search.Location.Placeholder}' data-placeholder='{Search.Location.Placeholder}'>
+                <option class='chosen-item' value=''>{Search.Location.NoRef}</option>
+                {Search.Location.Options}
+            </select>
+        </div>
+
+        {% if(!$showChosen) {%}
+	    <div id='search-title-property' class='search-field-title'>{Search.PropertyType.Placeholder}</div>
+        <div class='listing-search-field listing-search-field-taxonomy listing-search-field-property-type margin-top-0'>
+		{%} %}
+
+        {% if($showChosen) {%}
+        <div class='listing-search-field listing-search-field-taxonomy listing-search-field-property-type margin-top-8'>
+		{%} %}
+        
+            <select class='listing-search-property-type select form-control wbSearchMultiSelect' name='property-type[]' id='property-type' multiple data-placeholder='{Search.PropertyType.Placeholder}'>
+                <option class='chosen-item' value=''>{Search.PropertyType.NoRef}</option>
+                {Search.PropertyType.Options}
+            </select>
+        </div>
+        
+        {% if(!$showChosen) {%}
+	    <div id='search-title-feature' class='search-field-title'>{Search.Feature.Placeholder}</div>
+        <div class='listing-search-field listing-search-field-taxonomy listing-search-field-location margin-top-0' style='position:relative'>
+		{%} %}
+
+        {% if($showChosen) {%}
+        <div class='listing-search-field listing-search-field-taxonomy listing-search-field-location margin-top-8' style='position:relative'>
+		{%} %}
+
+            <div>
+                <select class='listing-search-feature select listing-search-field-feature form-control wbSearchMultiSelect' id='features' name='features[]' multiple data-placeholder='{Search.Feature.Placeholder}'>
+                	<option class='chosen-item' value=''>{Search.Feature.NoRef}</option>
+                    {Search.Feature.Options}
+                </select>
+            </div>
+            <div class='fullFeature hidden-xs hidden-sm'><span class='more'><i class='fa fa-list-ul'></i></span></div>
+            <div class='clear'></div>
+            <div id='moreFeatureContainer'>
+                <div id='accordion'>
+                    {Search.Feature.More.List}
+                </div>
+            </div>
+        </div>
+        
+        {% if($showBeds) {%}
+			<div class='listing-search-field listing-search-field-select listing-search-field-details_1 margin-top-8'>
+				<select class='listing-search-details_1 select form-control wbSearchDropdown' name='beds'>
+                	<option value=''>{Search.Beds.NoRef}</option>
+                    {Search.Beds.Options}
+	            </select>
+	        </div>
+		{%} %}
+        
+        {% if($showBaths) {%}
+			<div class='listing-search-field listing-search-field-select listing-search-field-details_2 margin-top-8'>
+				<select class='listing-search-details_2 select form-control wbSearchDropdown' name='baths'>
+                	<option value=''>{Search.Baths.NoRef}</option>
+                    {Search.Baths.Options}
+	            </select>
+	        </div>
+		{%} %}
+        
+        <div class='listing-search-field listing-search-field-select listing-search-field-min margin-top-8'>
+            <input type='text' class='listing-search-text text form-control wbSearchTextBox' name='min' id='minPrice' title='{Search.MinPrice.Title}' placeholder='{Search.MinPrice.Placeholder}' value=''/>
+        </div>
+        
+        <div class='listing-search-field listing-search-field-select listing-search-field-max margin-top-8'>
+            <input type='text' class='listing-search-text text form-control wbSearchTextBox' name='max' id='maxPrice' title='{Search.MaxPrice.Title}' placeholder='{Search.MaxPrice.Placeholder}' value=''/>
+        </div>
+        
+        {% if ($showCurrency) {%}
+			<div class='listing-search-field listing-search-field-select listing-search-field-currency margin-top-8'>
+                <select class='listing-search-currency select form-control wbSearchDropdown' name='currency'>
+                    {Search.Currency.Options}
+                </select>
+			</div>
+        {%} %}
+        
+        {% if ($showRating) {%}
+			<div class='listing-search-field listing-search-field-select listing-search-field-energyRating margin-top-8'>
+                <select class='listing-search-energyRating select form-control wbSearchDropdown' name='energyRating'>
+                    <option value=''>{Search.EnergyRating.NoRef}</option>
+                    {Search.EnergyRating.Options}
+                </select>
+			</div>
+        {%} %}
+        
+        <input type='submit' class='listing-search-submit btn btn-large btn-primary margin-top-8 wbSearchButton' name='search-submit' value='{Search.Button.Submit}'/>
+         {% if( !$showSearchType) {%}
+        	<input type='hidden' id='searchType'  name='searchType' value='{Search.TypeData}' />
+		{%} %}
+        {% if(!$showAreas) {%}
+       		<input type='hidden' id='searchArea' name='area' value='{Search.Area.Text}' />
+        {%} %}       
+        <input type='hidden' id='searchTypeValue' name='searchTypeValue' value='' />
+        <input type='hidden' id='areaValue' name='areaValue' value='' />
+        <input type='hidden' id='locationValue' name='locationValue' value='' />
+        <input type='hidden' id='propertyTypeValue' name='propertyTypeValue' value='' />
+        <input type='hidden' id='subTypeValue' name='subTypeValue' value='' />
+        <input type='hidden' id='bedValue' name='bedValue' value='' />
+        <input type='hidden' id='bathValue' name='bathValue' value='' />
+        <input type='hidden' id='startRentalDate' name='startRentalDate' />
+        <input type='hidden' id='endRentalDate' name='endRentalDate' />
+	
+	</form>
+
+    <input type='hidden' id='locationsJSON' value='{Search.Location.JSON}' />
+    <input type='hidden' id='typesJSON' value='{Search.Types.JSON}' />
+    <input type='hidden' id='priceRangeResale' value='{Search.Price.RangeData}' />
+    <input type='hidden' id='priceRangeRentalLT' value='{Search.Price.RangeRentalLongTermData}'/>
+    <input type='hidden' id='priceRangeRentalST' value='{Search.Price.RangeRentalShortTermData}' />
+    <input type='hidden' id='searchType' value='{Search.TypeData}' />
+    <input type='hidden' id='searchResultsPage' value='{Search.ResultPage}'/>
+    <input type='hidden' id='oldCurrency' value='{Search.Currency.Old}'/>
+    <input type='hidden' id='languageCode' value='{Search.LanguageCode}'/>
+    <input type='hidden' id='activeChosen' value='{Search.ShowChosen}'/>
+
+</div>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<webkit_Languages version="1.6">
+   <search_Types>
+      <for_Sale>Til Salgs</for_Sale>
+      <longTerm_Rent>Long Term Utleie</longTerm_Rent>
+      <shortTerm_Rent>Kortidsleige</shortTerm_Rent>
+   </search_Types>
+   <field_Headings>
+      <option_NoPref>Ingen Preferanse</option_NoPref>
+      <property_Type>Type</property_Type>
+      <property_SubType>Subtype</property_SubType>
+      <bedrooms>
+         <header>Soverom</header>
+         <short_Header>Soverom</short_Header>
+         <option_single>{i} Soverom</option_single>
+         <option_singleGreaterThan>{i} Soverom eller mer</option_singleGreaterThan>
+         <option_multiple>{i} Soverom</option_multiple>
+         <option_multipleGreaterThan>{i} Soverom eller mer</option_multipleGreaterThan>
+      </bedrooms>
+      <bathrooms>
+         <header>Bad</header>
+         <short_Header>Bad</short_Header>
+         <option_single>{i} Bad</option_single>
+         <option_singleGreaterThan>{i} Bad eller mer</option_singleGreaterThan>
+         <option_multiple>{i} Bad</option_multiple>
+         <option_multipleGreaterThan>{i} Bad eller mer</option_multipleGreaterThan>
+      </bathrooms>
+      <price_Min>Minste Pris</price_Min>
+      <price_Max>Maksimal Pris</price_Max>
+      <rental_From>Utleie fra</rental_From>
+      <rental_To>Utleie til</rental_To>      
+      <select_Locations>Velg steder</select_Locations>      
+      <select_Types>Velg eiendomstyper</select_Types>      
+      <select_Features>Velge egenskaper</select_Features>      
+      <energyRating>
+         <header>Energy Vurdering</header>
+         <option_NotRated>Ikke Vurdert</option_NotRated>
+         <option_Rated>Ingen Vurdert</option_Rated>
+         <option_rating>{i}</option_rating>
+         <option_ratingGreaterThan>{i} eller bedre</option_ratingGreaterThan>
+      </energyRating>
+      <plot_Size>Tomten Størrelse</plot_Size>
+      <terrace_Size>Terrasse</terrace_Size>
+      <built_Size>Bo Areal</built_Size>
+      <prop_Id>Eiendom ID</prop_Id>
+      <currency>Valuta</currency>
+      <search_Button>Søk</search_Button>
+   </field_Headings>
+   <results_Headings>
+      <new_Search>Nytt Søk</new_Search>
+      <resultCount>Vis</resultCount>
+      <search_Result>Søkeresultater</search_Result>
+      <no_Result>Ingen resultater ble funnet</no_Result>
+      <sort>
+         <header>Sorter</header>
+         <options_PriceAsc>Pris STIG</options_PriceAsc>
+         <options_PriceDesc>Pris SYNK</options_PriceDesc>
+         <options_Location>Sted</options_Location>
+         <options_Features>De Flest matchende egenskaper</options_Features>
+      </sort>
+      <pagination>
+      	<page_Count>Side {i} av {x}</page_Count>
+      	<first>Første</first>
+      	<prev>Forrige</prev>
+      	<next>Neste</next>
+      	<last>Siste</last>
+      </pagination>
+   </results_Headings>
+   <detail_Headings>
+      <property_Details>Detaljer om Eiendommen</property_Details>
+      <last_Result>Siste Resultater</last_Result>
+      <detail_Title>{i} Soverom {t} i {l}</detail_Title>
+      <photos>Bilder</photos>
+      <map>Kart</map>
+      <calendar>Reservasjon Kalender</calendar>
+   </detail_Headings>
+   <contact_Form>
+      <header>Kontakt skjema</header>
+      <firstName>Fornavn</firstName>
+      <lastName>Etternavn</lastName>
+      <email>E-post</email>
+      <message>Beskjed</message>
+      <submit>Send</submit>
+      <valid_firstName>Fornavn er obligatorisk</valid_firstName>
+      <valid_lastName>Etternavn er påkrevd</valid_lastName>
+      <valid_email>E-post er ugyldig</valid_email>
+   </contact_Form>
+</webkit_Languages>

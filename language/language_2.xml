@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<webkit_Languages version="2.0">
+   <search_Types>
+      <for_Sale>En Venta</for_Sale>
+      <longTerm_Rent>Alquiler Larga Temporada</longTerm_Rent>
+      <shortTerm_Rent>Alquiler Corta Temporada</shortTerm_Rent>
+   </search_Types>
+   <field_Headings>
+      <option_NoPref>Sin Preferencia</option_NoPref>
+      <property_Type>Tipo</property_Type>
+      <property_SubType>Subtipo</property_SubType>
+      <bedrooms>
+         <header>Dormitorios</header>
+         <short_Header>Dormitorios</short_Header>
+         <option_single>{i} Dorm</option_single>
+         <option_singleGreaterThan>{i} Dormitorio o más</option_singleGreaterThan>
+         <option_multiple>{i} Dormitorios</option_multiple>
+         <option_multipleGreaterThan>{i} Dormitorios o más</option_multipleGreaterThan>
+      </bedrooms>
+      <bathrooms>
+         <header>Baños</header>
+         <short_Header>Baños</short_Header>
+         <option_single>{i} Baño</option_single>
+         <option_singleGreaterThan>{i} Baño o más</option_singleGreaterThan>
+         <option_multiple>{i} Baños</option_multiple>
+         <option_multipleGreaterThan>{i} Baños o más</option_multipleGreaterThan>
+      </bathrooms>
+      <price_Min>Precio Mínimo</price_Min>
+      <price_Max>Precio Máximo</price_Max>
+      <rental_From>Alquiler De</rental_From>
+      <rental_To>Alquiler Para</rental_To>      
+      <select_Locations>Elija ubicaciónes</select_Locations>      
+      <select_Types>Elija los tipos de propiedad</select_Types>      
+      <select_Features>Elija características</select_Features>      
+      <energyRating>
+         <header>Certificado Energético</header>
+         <option_NotRated>No Valorado</option_NotRated>
+         <option_Rated>Valorado</option_Rated>
+         <option_rating>{i}</option_rating>
+         <option_ratingGreaterThan>{i} o mejor</option_ratingGreaterThan>
+      </energyRating>
+      <plot_Size>Parcela</plot_Size>
+      <terrace_Size>Terraza</terrace_Size>
+      <built_Size>Superficie</built_Size>
+      <garden>Jardin</garden>
+      <prop_Id>Propiedad Id</prop_Id>
+      <currency>Moneda</currency>
+      <search_Button>Buscar</search_Button>
+   </field_Headings>
+   <results_Headings>
+      <new_Search>Nueva Búsqueda</new_Search>
+      <resultCount>Mostrar</resultCount>
+      <search_Result>Resultados de la búsqueda</search_Result>
+      <no_Result>No se han encontrado resultados</no_Result>
+      <sort>
+         <header>Orden por</header>
+         <options_PriceAsc>Precio ASC</options_PriceAsc>
+         <options_PriceDesc>Precio DESC</options_PriceDesc>
+         <options_Location>Ubicación</options_Location>
+         <options_Features>Características coincidentes</options_Features>
+      </sort>
+      <pagination>
+      	<page_Count>Página {i} de {x}</page_Count>
+      	<first>Primero</first>
+      	<prev>Anterior</prev>
+      	<next>Siguiente</next>
+      	<last>Último</last>
+      </pagination>
+   </results_Headings>
+   <detail_Headings>
+      <property_Details>Detalles de la propiedad</property_Details>
+      <last_Result>Últimos Resultados</last_Result>
+      <detail_Title>{i} Dorm {t} en {l}</detail_Title>
+      <photos>Fotos</photos>
+      <map>Mapa</map>
+      <calendar>Alquiler Disponibilidad</calendar>
+      <not_Available>Alquiler Disponibilidad</not_Available>
+      <week>semana</week>
+      <month>mes</month>
+   </detail_Headings>
+   <contact_Form>
+      <header>Formulario de contacto</header>
+      <firstName>Nombre</firstName>
+      <lastName>Apellido</lastName>
+      <email>Correo electrónico</email>
+      <message>Mensaje</message>
+      <submit>Aceptar</submit>
+      <valid_firstName>Nombre es solicitado</valid_firstName>
+      <valid_lastName>Apellido es solicitado</valid_lastName>
+      <valid_email>Correo electrónico no es válido</valid_email>
+   </contact_Form>
+</webkit_Languages>

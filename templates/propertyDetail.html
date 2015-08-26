@@ -1,0 +1,151 @@
+<div class='wbDetailContainer'>
+	<div class='wbDetailLeftContainer'>
+    	<div class='wbDetailHeaderContainer'>
+            <h3>{Property.HeaderText}</h3>
+
+        	<h4>{Property.Price}{Property.LocationRef}</h4>
+            
+            <h4>
+				<a href='{Property.NewSearchUrl}'>{Property.NewSearchText}</a> &nbsp; 
+                {% if($showLastResultLink) {%}
+                	<a id='lastResult' href='{Property.LastResult.Link}'>{Property.LastResult.Text}</a>
+                {%} %}
+			</h4> 
+
+        </div>
+        
+        <div class='wbDetailHeaderSpace'></div>
+        
+        <div class='wbDetailTabContainer'>
+        	<div class='wbButtonLogoBar'>
+            	<ul class='nav nav-tabs wbDetailTab'>
+                	<li class='active'>
+                    	<a id='photoTab' href='#photos' data-toggle='tab'>
+                        	<i class='fa fa-camera'></i>
+                            <span class='wbShowTabHeading'>&nbsp;{Property.PhotoText}</span>
+                        </a>
+                    </li>
+                    {% if($showMap) {%}
+                    	<li>
+							<a id='mapTab' href='#mapHolder' data-toggle='tab'>
+								<i class='fa fa-map-marker'></i>
+								<span class='wbShowTabHeading'>&nbsp; {Property.Map.Title}</span>
+							</a>
+						</li>
+                    {%} %}
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <div class='img-border display-panel'>
+        	<div class='tab-content'>
+            	<div id='photos' class='tab-pane active'>
+                	<div class='mainImage' align='left'>
+                    	<div class='navigator'>
+                        	<div class='preArea'>
+                            	<span class='preCtrl'>
+                                	<a href='#' class='preBtn'></a>
+                                </span>
+                            </div>
+                            <div class='nextArea'>
+                            	<span class='nextCtrl'>
+                                	<a href='#' class='nextBtn'></a>
+                                </span>
+                            </div> 	
+                        </div>
+                        <div class='detailImageContainer'>
+                        	<img id='detailImage' class='destImg' src='{Property.DetailImages}'/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class='imageCarrousel'>
+                	<ul>
+                    	{Property.PhotoList}
+                    </ul>
+                </div>
+                {% if($showMap) {%}
+                	<div id='mapHolder' class='tab-pane mapContent'></div>
+                {%} %}
+            </div>
+        </div>
+        
+        <input type='hidden' id='mapLocation' value='{Property.DetailLocation}'/>
+        <input type='hidden' id='startRental' value='{Property.StartRentalDate}'/>
+        <input type='hidden' id='endRental' value='{Property.EndRentalDate}'/>
+        <input type='hidden' id='languageCode' value='{Property.LanguageCode}'/>
+        {% if($showBookingCalendar) {%}
+        	<input type='hidden' id='ranges' value='{Property.Booking.Data}'/>
+			<input type='hidden' id='bookingUrl' value='{Property.Booking.Url}'/>
+            <input type='hidden' id='bookingTextHover' value='{Property.Booking.TextHover}'/>
+        {%} %}
+                
+        <div class='wbDetailDescription'>
+        	{Property.Description}
+        </div>
+        
+        <div class='right-container'>
+        	<h3 class='wbDetailPropHeader'>{Property.DetailText}</h3>
+            {% if($showBookingCalendar) {%}
+            	<div class='bookingLink'>
+                	<a href='javascript:void(0);' id='showCalendar'>{Property.Booking.LinkText}</a>
+                    <input type='hidden' id='bookingCalendar' />
+                    <div></div>
+                 </div>
+            {%} %}
+            
+            <div class='wbDetailPropDetails'>
+        		<span class='fa fa-square-o'></span>
+            	{Property.DetailBed}
+        	</div>
+        
+        	<div class='wbDetailPropDetails'>
+        		<span class='fa fa-square-o'></span>
+            	{Property.DetailBath}
+        	</div>
+
+            {% if($showPlot) {%}
+            	<div class='wbDetailPropDetails'>
+                	<span class='fa fa-square-o'></span>
+                    {Property.DetailPlot}
+                </div>
+            {%} %}
+            
+            {% if($showBuild) {%}
+            	<div class='wbDetailPropDetails'>
+                	<span class='fa fa-square-o'></span>
+                    {Property.DetailBuild}
+                </div>
+            {%} %}
+            
+            {% if($showTerrace) {%}
+            	<div class='wbDetailPropDetails'>
+                	<span class='fa fa-square-o'></span>
+                    {Property.DetailTerrace}
+                </div>
+            {%} %}
+            
+            {% if($showGarden) {%}
+            	<div class='wbDetailPropDetails'>
+                	<span class='fa fa-square-o'></span>
+                    {Property.DetailGarden}
+                </div>
+            {%} %}
+            
+            {% if($showEnergy) {%}
+            	<div class='wbDetailPropDetails'>
+                	<span class='fa fa-square-o'></span>
+                    {Property.DetailEnergy}
+                </div>
+            {%} %}
+        </div>
+
+        <div class='wbDetailFeatureSpace'></div>
+
+        <div class='row'>
+    		{Property.Features}
+    	</div>
+    
+    </div>
+</div>

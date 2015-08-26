@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<webkit_Languages version="1.6">
+   <search_Types>
+      <for_Sale>Te Koop</for_Sale>
+      <longTerm_Rent>Langetermijnhuur</longTerm_Rent>
+      <shortTerm_Rent>Kortetermijnhuur</shortTerm_Rent>
+   </search_Types>
+   <field_Headings>
+      <option_NoPref>Geen Voorkeur</option_NoPref>
+      <property_Type>Type</property_Type>
+      <property_SubType>Subtype</property_SubType>
+      <bedrooms>
+         <header>Slaapkamers</header>
+         <short_Header>Slaapkamers</short_Header>
+         <option_single>{i} Slaap</option_single>
+         <option_singleGreaterThan>{i} Slaapkamer of meer</option_singleGreaterThan>
+         <option_multiple>{i} Slaapkamers</option_multiple>
+         <option_multipleGreaterThan>{i} Slaapkamers of meer</option_multipleGreaterThan>
+      </bedrooms>
+      <bathrooms>
+         <header>Badkamers</header>
+         <short_Header>Badkamers</short_Header>
+         <option_single>{i} Badkamer</option_single>
+         <option_singleGreaterThan>{i} Badkamer of meer</option_singleGreaterThan>
+         <option_multiple>{i} Badkamers</option_multiple>
+         <option_multipleGreaterThan>{i} Badkamers of meer</option_multipleGreaterThan>
+      </bathrooms>
+      <price_Min>Minimum Prijs</price_Min>
+      <price_Max>Maximale Prijs</price_Max>
+      <rental_From>Verhuur Van</rental_From>
+      <rental_To>verhuur aan</rental_To>      
+      <select_Locations>Kies locaties</select_Locations>      
+      <select_Types>Kies soorten woningtype</select_Types>      
+      <select_Features>Kies voorzieningen</select_Features>      
+      <energyRating>
+         <header>Energy Beoordelings</header>
+         <option_NotRated>Niet Beoordeeld</option_NotRated>
+         <option_Rated>Beoordeeld</option_Rated>
+         <option_rating>{i}</option_rating>
+         <option_ratingGreaterThan>{i} of beter</option_ratingGreaterThan>
+      </energyRating>
+      <plot_Size>Perceelgrootte</plot_Size>
+      <terrace_Size>Terras</terrace_Size>
+      <built_Size>Woongedeelte</built_Size>
+      <prop_Id>Woning Id</prop_Id>
+      <currency>Valuta</currency>
+      <search_Button>Zoeken</search_Button>
+   </field_Headings>
+   <results_Headings>
+      <new_Search>Nieuwe Zoekopdracht</new_Search>
+      <resultCount>Weergeven</resultCount>
+      <search_Result>Zoekresultaten</search_Result>
+      <no_Result>Er werden geen resultaten gevonden</no_Result>
+      <sort>
+         <header>Sorteren op</header>
+         <options_PriceAsc>Prijs STIJ</options_PriceAsc>
+         <options_PriceDesc>Prijs AFL</options_PriceDesc>
+         <options_Location>Locatie</options_Location>
+         <options_Features>De Meeste Overeenkomst Voorzieningen</options_Features>
+      </sort>
+      <pagination>
+      	<page_Count>Pagina {i} van {x}</page_Count>
+      	<first>Eerste</first>
+      	<prev>Vorige</prev>
+      	<next>Volgende</next>
+      	<last>Laatste</last>
+      </pagination>
+   </results_Headings>
+   <detail_Headings>
+      <property_Details>Details Vastgoed</property_Details>
+      <last_Result>Laatste Resultaten</last_Result>
+      <detail_Title>{i} Slaap {t} in {l}</detail_Title>
+      <photos>Fotos</photos>
+      <map>Kaart</map>
+      <calendar>Reserveringskalender</calendar>
+   </detail_Headings>
+   <contact_Form>
+      <header>Contact formulier</header>
+      <firstName>Voornaam</firstName>
+      <lastName>Achternaam</lastName>
+      <email>E-mail</email>
+      <message>Bericht</message>
+      <submit>Indienen</submit>
+      <valid_firstName>Voornaam is een verplicht</valid_firstName>
+      <valid_lastName>Achternaam is een verplicht</valid_lastName>
+      <valid_email>E-mail is ongeldig</valid_email>
+   </contact_Form>
+</webkit_Languages>

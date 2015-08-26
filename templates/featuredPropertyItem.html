@@ -1,0 +1,47 @@
+<div class="{FeaturedItem.ColClass}">
+    <a href='{FeaturedItem.Link}' class='formatLink homepage-featured-item'>
+        <div class='homeFeature'>
+            <div class='wbFeaturedImage'>
+                <img style="width: {FeaturedItem.ImageWidth}px; height: {FeaturedItem.ImageHeight}px" src='{FeaturedItem.ImageSource}' />
+            </div>
+
+            <div>
+                <div class='text-center'>
+                    <div class='wbFeaturedTitle custom1'>
+                        {FeaturedItem.Type}
+                     </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class='wbFeaturedTitle custom1'>
+                        {FeaturedItem.Title}
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class='wbFeaturedTitle custom2 text-right'>
+                        {FeaturedItem.RefId}
+                    </div>
+                </div>
+            </div>
+            
+            <div class='row'>
+                <div class='wbResultDetailLabel col-xs-6'>
+                    <div class='wbFeaturedDetails custom1'>{FeaturedItem.BedHeader}: {FeaturedItem.BedValue}</div>
+                </div>
+                <div class='wbResultDetailLabel col-xs-6 text-right'>
+                    <div class='wbFeaturedDetails custom2'>{FeaturedItem.BathHeader}: {FeaturedItem.BathValue}</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class='wbResultDetailLabel text-center'>
+                    <div class='wbFeaturedDetails custom3'>
+                        {FeaturedItem.Price}
+                     </div>
+                </div>
+            </div>
+         </div>
+    </a>
+</div>

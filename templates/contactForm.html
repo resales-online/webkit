@@ -1,0 +1,29 @@
+<div class="wbContactContainer">
+
+    <form id="contactForm" action="{Property.ContactForm.Action}">
+        <h3 class="wbContactHeader">{Property.ContactForm.Title}</h3>
+        <input type="text" placeholder="{Property.ContactForm.FirstName}" title="{Property.ContactForm.FirstName}" name="M1" id="M1" value="{Property.ContactForm.M1}" class="form-control padding-bottom5 wbContactInput"/>
+        <input type="text" placeholder="{Property.ContactForm.LastName}" title="{Property.ContactForm.LastName}" name="M2" id="M2" value="{Property.ContactForm.M2}" class="form-control padding-bottom5 wbContactInput"/>
+        <input type="text" id="M5" placeholder="{Property.ContactForm.Email}" title="{Property.ContactForm.Email}" name="M5" value="{Property.ContactForm.M5}" class="form-control padding-bottom5 wbContactInput"/>
+        <textarea id="M7" name="M7" rows="6" placeholder="{Property.ContactForm.Message}" cols="40" class="form-control padding-bottom5 wbContactTextArea"></textarea>
+        <input type="submit" id="contactFormSubmit" value="{Property.ContactForm.Submit}" name="submit" class="listing-search-submit btn btn-large btn-primary margin-top-8 wbContactSubmit">
+        <input type="hidden" id="M6" name="M6" value="Properties {Property.ContactForm.DetailReference}"/>
+        <input type="hidden" id="RsId" name="RsId" value="{Property.ContactForm.DetailReference}"/>
+        <input type="hidden" id="W1" name="W1" value="{Property.ContactForm.DetailCountry}"/>
+        <input type="hidden" id="W2" name="W2" value="{Property.ContactForm.DetailArea}"/>
+        <input type="hidden" id="W3" name="W3" value="{Property.ContactForm.DetailLocation}"/>
+        <input type="hidden" id="W4" name="W4" value="{Property.ContactForm.DetailType}"/>
+        <input type="hidden" id="W6" name="W6" value="{Property.ContactForm.DetailBeds}"/>
+        <input type="hidden" id="W7" name="W7" value="{Property.ContactForm.DetailBaths}"/>
+        <input type="hidden" id="W10" name="W10" value="{Property.ContactForm.SearchType}"/>
+        <input type="hidden" id="p1" name="p1" value="{Property.ContactForm.ContactId}"/>
+        <input type="hidden" id="p2" name="p2" value="{Property.ContactForm.HashKey}"/>
+        <input type="hidden" id="Lang" name="Lang" value="{Property.ContactForm.Language}"/>
+        <input type="hidden" id="errFirstName" value="{Property.ContactForm.ErrFirstName}"/>
+        <input type="hidden" id="errLastName" value="{Property.ContactForm.ErrLastName}"/>
+        <input type="hidden" id="errEmail" value="{Property.ContactForm.ErrEmail}"/>
+    </form>
+
+    <div id="formMsg" class="wbContactResponse" style="display:none"></div>
+
+</div>

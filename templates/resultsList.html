@@ -1,0 +1,54 @@
+<div class="wbResultContainer">
+	<a href="{Result.DetailUrl}">
+    	<div class="row">
+        	<div class="col-xs-12 col-md-12">
+            	<table style='width:100%;'>
+                	<tr>
+                	<td style='width:165px; min-width:165px; max-width:165px;'>
+                        <div class="wbResultImage">
+                            <img width="155" height="120" src="{Result.Image}"/>
+                        </div>
+                    </td>
+                	<td>
+                      <div class="wbResultDetail">
+                          <div class="wbResultHeader">{Result.Title}</div>
+                          <div class="wbResultDescription">{Result.Description}</div>
+                          <div class="wbResultDescribe">
+                          
+                              {% if ($isResidential) {%}
+                                  <span class='text-nowrap'>
+                                      <span class='wbResultDetailLabel'>{Result.Beds.Label}:</span> <span class='wbResultDetailValue'>{Result.Beds.Value}</span>
+                                  </span>
+                                  <span class='text-nowrap'>
+                                      <span class='wbResultDetailLabel'>{Result.Baths.Label}:</span> <span class='wbResultDetailValue'>{Result.Baths.Value}</span>
+                                  </span>
+                                  <span class='text-nowrap'>
+                                      <span class='wbResultDetailLabel'>{Result.BuildSize.Label}:</span> <span class='wbResultDetailValue'>{Result.BuildSize.Value}</span>
+                                  </span>
+                              {%} %}
+                                
+                              {% if ($isApartment) {%}
+                                  <span class='text-nowrap'> 
+                                      <span class='wbResultDetailLabel'>{Result.Terrace.Label}:</span> <span class='wbResultDetailValue'>{Result.Terrace.Value}</span>
+                                  </span>
+                              {%} %}
+                              
+                              {% if (!$isApartment) {%}
+                                  <span class='text-nowrap'> 
+                                      <span class='wbResultDetailLabel'>{Result.Plot.Label}:</span> <span class='wbResultDetailValue'>{Result.Plot.Value}</span>
+                                  </span>
+                              {%} %}
+                          </div>
+                      </div>
+                    </td>
+                    </tr>
+                </table>
+        	</div>
+            
+        	<div class="clearfix visible-sm-block"></div>
+        	<div class="wbResultMatchedFeatures col-xs-12 col-md-12">
+            	{Result.MatchedFeature}
+        	</div>
+        </div> 
+    </a>
+</div>

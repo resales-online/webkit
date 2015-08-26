@@ -1,0 +1,727 @@
+.margin-top-8 {
+    margin-top:8px;
+}
+
+.margin-top-0 {
+    margin-top:-6px;
+}
+
+.clear { clear: both; }
+.space-5 { height: 5px; clear: both; }
+.space-10 { height: 10px; clear: both; }
+
+.preCtrl, .nextCtrl {
+	display:none;
+}
+
+.imageCarrousel ul
+{
+	margin: 0px;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.imageCarrousel ul li { display: inline-block; margin-left: 5px; margin-bottom:5px}
+
+.description {
+	text-align:justify;
+}
+
+ul { list-style-type: none; }
+
+.feature {
+	margin-left:15px;
+}
+
+.feature-element {
+	padding: 5px 20px 5px 0;
+}
+
+.properties-item {
+	font-weight: bold;
+	margin-left:10px;
+	color:gray;
+}
+
+.padding-bottom5 {
+	margin-bottom:5px;
+}
+
+a.disabled {
+	opacity: 0.5
+	pointer-events: none
+	cursor: default
+}
+
+a.formatLink {
+	text-decoration:none;
+	color:#000;
+}
+
+.homeFeature {
+	border:1px solid gray;
+}
+
+.custom1 {
+	margin: 2px 0px 0px 5px;
+	padding: 0px 2px;
+}
+
+.custom2 {
+	margin: 2px 5px 0px 0px;
+	padding: 0px 2px;
+}
+
+.custom3 {
+	margin: 2px 5px 0px 0px;
+	padding: 0px 2px 5px 2px;
+	font-weight: bold;
+	color: #000;
+}
+
+.ui-datepicker-calendar .ui-custom-highlight {
+	background: #6eafbf;
+	-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+	-moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+	box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+	/*color: #e0e0e0;*/
+	color: #DCDCDC;
+	text-shadow: 0px 1px 0px #4d7a85;
+	filter: dropshadow(color=#4d7a85, offx=0, offy=1);
+	border: 1px solid #55838f;
+	position: relative;
+	margin: -1px;
+}
+
+.event1 a, .event2 a, .event3 a, .event4 a, .event8 a {
+    background-image:none !important;
+    color: #ffffff !important;
+}
+
+.event1 {
+	background-color: #0563FA !important;
+}
+
+.event2 a {
+   background-color : #55AA55 !important;
+   background-image :none !important;
+   color: white !important;
+   font-weight:bold !important;
+}
+
+.event3 a {
+    background-color: #0AF7F7 !important;
+}
+
+.event4 a {
+    background-color: #FAE505 !important;
+}
+
+.event8 {
+	background-color: #EDAE39 !important;
+}
+
+.checkbox-grid li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.checkbox-grid li label {
+	margin-left:5px;
+}
+
+.category {font-weight: bold}
+
+.chosen-results li.item {padding-left: 25px;}
+
+.featureGroup {
+	border-spacing: 3px;
+    border-collapse: separate;
+}
+
+.featureGroup td { 
+    padding: 2px;
+}
+
+.mainImage
+{
+	height:515px;
+}
+
+.navigator 
+{
+	position: relative;
+	height:50px;
+	z-index:2;
+	top:230px;
+}
+
+.preArea
+{
+	float:left;
+	width:50px;
+	height:50px;
+	/*background: rgba(77,77,79,0.7);*/
+	font-size: 60px;
+}
+
+.nextArea
+{
+	float:right;
+	width:50px;
+	height:50px;
+	/*background: rgba(77,77,79,0.7);*/
+	font-size: 60px;
+}
+.preCtrl 
+{
+	margin-left:13px;
+}
+.nextCtrl
+{
+	margin-left:17px;
+}
+.detailImageContainer
+{
+	position: relative;
+	top: -50px;
+	overflow: hidden;
+	background: #D3D3D3;
+}
+
+/**
+.preCtrl a, .preCtrl .a, nextBtn a, .nextBtn .a {
+	height: 60px;
+	line-height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	overflow: hidden;
+}
+
+.preCtrl a, .preCtrl .a, nextBtn a, .nextBtn .a {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	font-size: 0;
+	text-align: center;
+	-moz-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	-webkit-transition: all .1s ease-out;
+	transition: all .1s ease-out;
+	color: white;
+	background: rgba(77,77,79,0.7);
+}
+**/
+
+.preCtrl a, .preCtrl .a, .nextCtrl a, .nextCtrl .a {
+	cursor: pointer;
+	text-align: center;
+	-moz-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	-webkit-transition: all .1s ease-out;
+	transition: all .1s ease-out;
+	color: white;
+	outline: none;
+}
+
+.preCtrl a:before, .preCtrl .a:before {
+	content: '\2039';
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 0;
+	margin-top: -1em;
+}
+
+.nextCtrl a:before, .nextCtrl .a:before {
+	content: '\203A';
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 0;
+	margin-top: -1em;
+}
+
+.imageCarrousel
+{
+	margin-bottom:15px;
+	margin-left:2px;
+}
+
+.mapContent
+{
+	height:578px;
+	position: relative; 
+	background-color: rgb(229, 227, 223); 
+	overflow: hidden;
+}
+
+.bookingLink
+{
+	float:right;
+	position:relative;
+	top:-30px;
+}
+
+/** Custom css **/
+.wbFeaturedContainer
+{
+
+}
+.wbFeaturedImage
+{
+	overflow: hidden
+}
+.wbFeaturedTitle
+{
+	font-weight: bold;
+}
+
+.wbFeaturedDetails
+{
+
+}
+.wbContactContainer
+{
+
+}
+.wbContactHeader
+{
+
+}
+.wbContactInput
+{
+
+}
+.wbContactTextArea
+{
+
+}
+.wbContactSubmit
+{
+
+}
+.wbContactResponse
+{
+	color: red;
+	padding-top: 10px;
+}
+.wbDetailContainer
+{
+
+}
+
+.wbDetailHeaderContainer
+{
+	font-size:22px;
+}
+
+.wbDetailHeader
+{
+	float:left;
+	width:100%;
+}
+
+.wbDetailHeaderLinks
+{
+	font-size:16px;
+	font-weight:bold;
+}
+
+.wbDetailHeaderSpace 
+{
+	clear:both;
+	margin-bottom:25px;
+}
+
+.wbDetailTitle
+{
+	float:left;
+	margin-right:5px;
+	font-size:16px;
+	margin:10px 0;
+}
+
+.wbButtonLogoBar 
+{
+	bottom: 0;
+	position: absolute;
+	/*width: 100%;*/
+}
+
+.wbDetailTab {
+
+}
+.wbShowTabHeading
+{
+	display: inline;
+}
+.wbDetailTab .active
+{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.wbDetailTabContainer
+{
+	height: 50px;
+	margin-top: -15px;
+	position: relative;
+	width:700px;
+}
+.wbDetailDescription
+{
+
+}
+.wbDetailPropHeader
+{
+
+}
+.wbDetailPropDetails
+{
+	font-weight: bold;
+	margin-left:10px;
+	color:gray;
+}
+.wbDetailFeatureSpace 
+{
+	clear:both;
+	margin-bottom:15px;
+}
+.wbDetailFeatureHeader
+{
+
+}
+.wbDetailFeatureDetail
+{
+
+}
+.wbResFeatureLabel
+{
+
+}
+.wbResFeatureValue
+{
+
+}
+.wbResFeatureValueStrikethrough
+{
+
+}
+.wbResultContainer
+{
+	clear: both;
+	padding: 25px 15px;
+	border-radius: 5px;
+	margin-bottom:7px;
+	border: 1px solid #e5e6e9;
+}
+
+.wbResultContainer:hover 
+{ 
+	background-color:#eee;
+}
+
+.wbResultContainer > a {
+	text-decoration:none;
+	color:#000;
+}
+
+.wbResultDetail
+{ 
+	width: 100%;
+}
+
+.wbResultDescribe
+{
+	margin-top: 3px;
+}
+
+.wbResultImage
+{
+
+}
+.wbResultHeader
+{
+	font-weight: bold;
+}
+
+.wbResultDetailLabel
+{
+	font-weight: bold;
+	color:gray;
+}
+.wbResultDetailValue
+{
+	padding-right: 5px;
+}
+.wbPagContainer
+{
+	padding-bottom: 7px;
+}
+.wbPagContainerRow
+{
+
+}
+.wbPagButton {
+
+}
+.active
+{
+
+}
+.wbPagSortDropDown
+{
+	float: right;
+	display: inline;
+}
+.wbPagSortText
+{
+	float: right;
+	display: inline;
+	padding: 0px 7px 0px 15px;
+}
+.wbPagCountDropDown
+{
+	float: right;
+	display: inline;
+}
+.wbPagCountText
+{
+	float: right;
+	display: inline;
+	padding-right:7px;
+}
+.wbPagIndicatorText
+{
+	padding-right: 15px;
+}
+.wbSearchDropdown
+{
+
+}
+.wbSearchTextBox
+{
+
+}
+.wbSearchMultiSelect
+{
+
+}
+.wbSearchButton
+{
+
+}
+.wbSearchContainer
+{
+	margin:15px;
+	line-height:35px;
+}
+
+.wbDetailContainer
+{
+
+}
+.wbDetailHeader
+{
+
+}
+.wbDetailTitle
+{
+
+}
+.wbDetailTab {
+
+}
+.active
+{
+
+}
+.wbDetailTabContainer
+{
+
+}
+.wbDetailDescription
+{
+
+}
+.wbDetailPropHeader
+{
+
+}
+.wbDetailPropDetails
+{
+
+}
+.wbDetailFeatureHeader
+{
+
+}
+.wbDetailFeatureDetail
+{
+
+}
+.wbResFeatureLabel
+{
+
+}
+.wbResFeatureValue
+{
+
+}
+.wbResFeatureValueStrikethrough
+{
+
+}
+.wbResultContainer
+{
+
+}
+.wbResultImage
+{
+
+}
+.wbResultHeader
+{
+
+}
+.wbResultDescription
+{
+	overflow: hidden;
+   	text-overflow: ellipsis;
+   	line-height: 16px;
+    height: 80px;
+}
+.wbResultDetailLabel
+{
+
+}
+.wbResultDetailValue
+{
+
+}
+.wbResultMatchedFeatures
+{
+	margin-top: 5px;
+}
+.wbPagContainer
+{
+
+}
+.wbPagButton {
+
+}
+.active
+{
+
+}
+.wbPagSortDropDown
+{
+
+}
+.wbPagSortText
+{
+
+}
+.wbPagCountDropDown
+{
+
+}
+.wbPagCountText
+{
+
+}
+.wbPagIndicatorText
+{
+
+}
+.wbSearchDropdown
+{
+
+}
+.wbSearchTextBox
+{
+
+}
+.wbSearchMultiSelect
+{
+
+}
+.wbSearchButton
+{
+
+}
+.wbSearchContainer
+{
+
+}
+/** End custom css */
+
+.wbPagContainer {
+	margin-bottom: 7px;
+}
+
+.wbPagContainer span {
+	margin-left:5px;
+}
+.wbPagContainer .space {
+	width:50px;
+}
+.wbPagButton:active {
+	
+}
+
+.wbPagButtonDisable {
+	opacity:0.4;
+}
+
+.wbPagButtonDisable:hover {
+	text-decoration:none;
+}
+
+.wbPageDropDown {
+	margin-bottom:5px
+}
+
+p.ellipsis {
+	overflow: hidden;
+   	text-overflow: ellipsis;
+   	display: -webkit-box;
+	white-space:nowrap;
+   	line-height: 16px;
+   	max-height: 80px;
+   	-webkit-line-clamp: 2;
+   	-webkit-box-orient: vertical;
+}
+
+.wbResFeatureLabel {
+	font-weight:bold;
+}
+
+.wbResFeatureValue {
+	color: #333333;
+}
+
+.wbResFeatureValueStrikethrough {
+	color: #AAAAAA;
+	text-decoration: line-through;
+}
+
+.fullFeature {
+	position:absolute;
+	top:2px;
+	right:10px;
+}
+
+.errorMsg{
+	color:red;
+	font-weight:bold;	
+}
+
+.homepage-featured-item {
+	margin-bottom: 10px;
+	display: block;
+}
+
+.search-field-title {
+	margin: -2px 0px 0px 5px;
+	color: #666666;
+}
